@@ -1,5 +1,6 @@
 var gulp = require("gulp")
 var sass = require("gulp-sass")
+// var sass = require("gulp-ruby-sass")
 var autoprefixer = require("gulp-autoprefixer");
 var frontnote = require("gulp-frontnote");
 var uglify = require("gulp-uglify");
@@ -7,6 +8,7 @@ var browser = require("browser-sync");
 var plumber = require("gulp-plumber");
 var ejs =  require("gulp-ejs");
 var rename =  require("gulp-rename");
+
 
 gulp.task("server", function(){
 browser({
@@ -25,11 +27,11 @@ gulp.task("sass", function() {
 gulp.src("sass/**/*.scss")
 .pipe(plumber())
 .pipe(frontnote({
-css: '../stylesheets/main.css'
+css: '../css/main.css'
 }))
 .pipe(sass())
 .pipe(autoprefixer())
-.pipe(gulp.dest("./stylesheets"))
+.pipe(gulp.dest("./css"))
 .pipe(browser.reload({stream:true}))
 });
 
