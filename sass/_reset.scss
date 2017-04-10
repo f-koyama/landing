@@ -1,0 +1,22 @@
+/*reset
+-----------------*/
+html, body, h1, h2, h3, h4, p, ul, li ,dl ,dt, dd, table, tr, th, td {
+  margin: 0;
+  padding: 0;
+  line-height: 1.0;
+  font-family:
+		makinas,
+   "Hiragino Kaku Gothic ProN",
+    Meiryo,
+    sans-serif;
+	font-feature-settings: "palt";
+}
+
+ul { list-style: none; }
+
+a { text-decoration: none; }
+
+img {
+   vertical-align: bottom;
+   border: none;
+}
