@@ -1,0 +1,22 @@
+footer {
+	text-align: center;
+	padding: 20px 0 30px;
+	background: #363636;
+	color: #fff;
+
+	li {
+		display: inline-block;
+		margin-bottom: 16px;
+		padding: 0 5px;
+
+		a {
+			color: #fff;
+			font-size: 14px;
+			transition: 0.3s all linear;
+
+			&:hover {
+				color: #ccc;
+			}
+		}
+	}
+}
